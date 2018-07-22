@@ -1,0 +1,62 @@
+# 開発環境を構築する
+
+Djangoを使ったpython Webアプリケーションを開発するための環境を構築する。
+
+## Atom（エディター）
+
+-   <https://atom.io>
+-   設定画面からパッケージをインストールすると機能を拡張できる。
+    -   Hydrogen
+    -   atom-beautify
+    -   japanese-menu
+    -   atom-runner
+    -   autocomplete-paths
+    -   autocomplete-python
+    -   busy-signal
+    -   file-icons
+    -   highlight-selected
+    -   intentions
+    -   line-jumper
+    -   linter
+    -   linter-flake8
+    -   linter-markdown
+    -   linter-ui-default
+    -   minimap
+    -   script
+    -   markdown-writer
+    -   markdown-scroll-sync
+    -   tool-bar
+    -   tool-bar-markdown-writer
+-   Proxy設定
+    シェルコマンドをインストール後、apmコマンドで設定する。
+    ```
+    apm config list
+    apm config set http-proxy="http://proxygate1.nic.nec.co.jp:8080/"
+    apm config set https-proxy="http://proxygate1.nic.nec.co.jp:8080/"
+    ```
+-   flake8
+    これを入れないとlinterでエラーになった。
+    `pip install flake8`
+
+## python
+
+-   <https://www.python.org>
+-   ダウンロード後、パッケージをインストールする。
+
+## Anaconda
+
+-   <https://www.anaconda.com/download/>
+-   こちらもダウンロード後、インストール。
+-   インストーラの最後にVSCodeのインストールもできたので、入れてみる。
+
+## SourceTree
+-   <https://ja.atlassian.com/software/sourcetree>
+
+## Git
+
+-   <https://git-scm.com>
+-   インストールしようと思ってもセキュリティの警告でできなかったが、OSのシステム環境設定画面のセキュリティ設定から実行することでできた。
+
+## iceberg(ターミナルのスタイル)
+
+-   <http://cocopon.github.io/iceberg.vim/>
